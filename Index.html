@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALCULATOR</title> 
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <style>
+body{
+  background-color:rgba(255,215,37,0.735);
+}
+#container{
+  background-image:url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1599634875158-597d3f647df6%3Fq%3D80%26w%3D1000%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8aWl0fGVufDB8fDB8fHww&tbnid=L_P_6uu4DLI2EM&vet=1&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fiit&docid=m8MljmQvIM77rM&w=1000&h=1550&source=sh%2Fx%2Fim%2Fm1%2F2&kgs=9c82bdad1a1bea55");
+  background-size:400px;
+  height:690px;
+  width:400px;
+  border:red solid 3px;
+  text-align:center;
+  padding-top:20px;
+}
+#display{
+  text-align:center;
+  font-size:40px;
+  width:90%;
+  height:50px;
+  padding-bottom:3px;
+  margin-bottom:40px;
+}
+#btn{
+  width:100px;
+  height:50px;
+  font-size:30px;
+  margin:2px 2px 2px 2px;
+}
+
+#btn:hover{
+  background-color:red;
+}
+#btn2{
+background-color:rgba(126,126,126,0.862);
+width:100px;
+ height:50px;
+ font-size:30px;
+margin:2px 2px 2px 2px;
+}
+#btn2:hover{
+background-color:red;
+}
+  </style>
+  </head>
+  <body>
+    <div id="container" >
+      <form id="calculator">
+    <input type="text" id="display" name="name" readonly>
+    <br>
+    <input type="button" id="btn" value="1" onclick="display.value +='1'">
+    <input type="button" id="btn" value="2" onclick="display.value +='2'">
+    <input type="button" id="btn" value="3" onclick="display.value +='3'">
+    <br>
+   <input type="button" id="btn" value="4" onclick="display.value +='4'">
+   <input type="button" id="btn" value="5" onclick="display.value +='5'">
+   <input type="button" id="btn" value="6" onclick="display.value +='6'">
+   <br>
+   <input type="button" id="btn" value="7" onclick="display.value +='7'">
+   <input type="button" id="btn" value="8" onclick="display.value +='8'">
+   <input type="button" id="btn" value="9" onclick="display.value +='9'">
+   <br>
+  <input type="button" id="btn" value="." onclick="display.value +='.'">
+  <input type="button" id="btn" value="0" onclick="display.value +='0'">
+ <input type="reset" id="btn" value="C" onclick="display.value =''">
+ <div>
+ <input type="button" id="btn2" value="+" onclick="display.value +='+'">
+ <input type="button" id="btn2" value="-" onclick="display.value +='-'">
+ <input type="button" id="btn2" value="x" onclick="display.value +='*'">
+ <input type="button" id="btn2" value="÷" onclick="display.value +='/'">
+ <input type="button" id="btn2" value="=" onclick="display.value = eval(display.value)">
+ </div>
+   </form>
+</div>
+  </body>
+</html>
